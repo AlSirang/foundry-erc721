@@ -2,8 +2,8 @@
 pragma solidity ^0.8.18;
 
 import {Test} from "forge-std/Test.sol";
-import {DeployDogieNFT} from "../script/DeployDogieNFT.s.sol";
-import {DogieNFT} from "../src/DogieNFT.sol";
+import {DeployDogieNFT} from "../../script/DeployDogieNFT.s.sol";
+import {DogieNFT} from "../../src/DogieNFT.sol";
 
 contract TestDogieNFT is Test {
     DogieNFT private dogieNFT;

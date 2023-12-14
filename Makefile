@@ -52,8 +52,14 @@ endif
 deploy:
 	@forge script script/DeployDogieNFT.s.sol:DeployDogieNFT $(NETWORK_ARGS) $(VERIFY_ARGS) -vvvv
 
+deployMoodNFT:
+	@forge script script/DeployMoodNFT.s.sol:DeployMoodNFT $(NETWORK_ARGS) $(VERIFY_ARGS) -vvvv
+
 mint:
 	@forge script script/Interactions.s.sol:MintDogieNFT $(NETWORK_ARGS)
+
+mintMoodNFT:
+	@forge script script/Interactions.s.sol:MintMoodNFT $(NETWORK_ARGS)
 
 dis:
 	@echo $(VERIFY_ARGS)

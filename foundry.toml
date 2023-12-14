@@ -5,4 +5,6 @@ libs = ["lib"]
 remappings = ["@openzeppelin=lib/openzeppelin-contracts"]
 ffi = true
 
+# to allow foundry read content of file. here it is allowing to read files of images folder
+fs_permissions =[{access='read', path='./images'}]
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
